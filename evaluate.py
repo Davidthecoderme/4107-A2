@@ -9,7 +9,8 @@ with open("formated-test.tsv", "r") as f:
 
 # 2. Load system output (filtered results)
 run = {}
-with open("Results_bert.txt", "r") as f: 
+
+with open("Results_dense.txt", "r") as f:  #replace dense with bert to test bert results
     for line in f:
         parts = line.strip().split()
         if len(parts) != 6:
